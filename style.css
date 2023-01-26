@@ -1,0 +1,493 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    border: none;
+    outline: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+a{
+    text-decoration: none;
+}
+
+::selection{
+    background-color:peru;
+    color:darksalmon;
+}
+
+::-webkit-scrollbar{
+    width:1rem;
+    height:0.3rem;
+}
+
+::-webkit-scrollbar-track{
+    background-color:yellowgreen;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color:coral;
+
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+}
+
+section{
+    max-width: 100%;
+    max-height: 100%;
+    padding: 3rem 2rem;
+    margin:0 auto;
+}
+
+.header{
+    position: sticky;
+    top:0;
+    background-color:white;
+}
+
+.header .float{
+    display:flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    padding:0.5rem 1rem;
+}
+
+.header .float .shape{
+    display :flex;
+    margin-left:5%;
+    text-transform: uppercase;
+}
+
+.header .float .shape i{
+    font-size: 1.5rem;
+    color: aqua;
+    margin: auto;
+}
+
+.header .float .shape h1{
+    font-size: 23px;
+    color: aqua;
+    font-weight: bold;
+}
+
+.header .float .navbar a{
+    margin-left:5rem;
+    font-size: 20px;
+    color: black;
+}
+
+.header .float .navbar a:hover{
+    color: aqua;
+    text-decoration: underline;
+}
+
+.Home{
+    display: flex;
+    flex-direction: column;
+    gap:3rem;
+    align-items: center;
+    min-height:35rem;
+    background-color:whitesmoke;
+}
+
+.Home .layout{
+    text-align: center;
+   
+}
+
+.Home .layout p{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: black;
+    display: inline-block;
+    padding: 2rem;
+    width: 30rem;
+}
+
+.Home .layout span{
+color: aqua;
+}
+
+
+
+ .nav-links{
+    display: inline-flex;
+    justify-content: space-evenly;
+    width: 90%;
+    background-color:green;
+}
+.nav-links a{
+    color: white;
+    font-size: 23px;
+
+}
+
+.About{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    background-color: transparent;
+}
+
+.About .area img{
+    width: 30rem;
+    height: 30rem;
+    margin-left:20%;
+}
+
+.About .content{
+    text-align: left;
+    margin: auto;
+    margin-left: 10%;
+    width: 25rem;
+}
+
+.About .content h1{
+    color: black;
+    font-weight: bold;
+    font-size: 27px;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.About .content p{
+    line-height:2;
+    font-size: 23px;
+    color:blue;
+    margin-bottom: 1rem;
+}
+
+ .button {
+    display: inline-block;
+    text-align: left;
+    padding: 1rem 2rem;
+    background-color:black;
+    font-size: 20px;
+    color: white;
+}
+
+.Specifications .heading{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.Specifications .heading h1{
+    font-size: 30px;
+    color: black;
+}
+
+.Specifications .box-container{
+    display:grid;
+    grid-template-columns:30rem 30rem;
+    gap: 2rem;
+    align-items:center;
+}
+
+.Specifications .box-container .box{
+    padding-left: 15rem;
+}
+
+ 
+
+.Specifications .box-container .box i{
+    color: black;
+  
+}
+
+.Specifications .box-container .box h1{
+    font-size: 25px;
+    color: black;
+   
+    
+}
+
+.Work .title{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.Work .title h1{
+    color: black;
+    font-size: 28px;
+}
+.Work .list-container{
+    display:flex;
+    gap:3rem;
+    align-items: center;
+}
+
+.Work .list-container .list{
+    text-align: left;
+}
+.Work .list-container .list img{
+    width:100%;
+    height: 100%;
+}
+.Work .list-container .list h1{
+    text-align: left;
+}
+
+.Work .align-container{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+.Work .align-container .align{
+    text-align: left;
+}
+.Work .align-container .align img{
+width: 100%;
+height: 100%;
+}
+
+.Contact{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    background-color: aqua;
+    align-items: center;
+    
+
+}
+
+.Contact .item{
+    gap:3rem;
+    text-align: center;
+}
+
+.Contact .item   i{
+    color:white;
+    transform: rotate(30deg);
+
+}
+
+.Contact .item h1{
+    color:black;
+    font-size: 32px;
+}
+
+.Contact .item p{
+    color: white;
+    font-size: 30px;
+}
+.Footer{
+    padding: 3rem;
+    background-color: black;
+}
+.Footer .sub-container{
+    display: flex;
+    flex-direction:row;
+    gap: 4rem;
+    align-items: center;
+    margin-left: 20%;
+}
+
+.Footer .sub-container .sub{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.Footer .sub-container .sub h1{
+    color: white;
+    font-size: 20px;
+}
+
+
+.Footer .sub-container .sub .border{
+    display:flex;
+    width: 17rem;
+    font-size: 25px;
+    color: white;
+}
+.Footer .sub-container .sub .set{
+    color: aqua;
+    font-size: 22px;
+    margin: auto;
+}
+
+.Footer .sub-container .sub a{
+    color: white;
+    font-size: 18px;
+    padding: auto;
+    margin: auto;
+}
+
+
+
+
+@media only screen and (min-width:368px) and (max-width:428px){
+    .Home .layout p{
+        width: 25rem;
+    }
+
+    .nav-links{
+        display:grid;
+        align-items: center;
+    }
+
+    .nav-links a{
+        margin: auto;
+
+    }
+
+    .About{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .About .area img{
+        width:30rem;
+        height: 25rem;
+        padding-right:35%;
+    }
+
+    .About .content p{
+        width: 18rem;
+
+    }
+    .Specifications .box-container{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .Specifications .box-container .box {
+        padding-right: 15rem;
+        text-align:center;
+    }
+
+
+    .Specifications .box-container .box h1{
+        display: grid;
+    }
+
+    .Work .list-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Work .list-container .list{
+        text-align: left;
+    }
+
+    .Work .align-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Work .align-container .align{
+        text-align: left;
+    }
+
+
+
+
+
+
+   .Contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    }
+
+
+   .Footer .sub-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-right: 20%;
+    }
+
+}
+
+@media (min-width:460px) and (max-width:595px)
+{
+    .header .float .navbar{
+        display: grid;
+        align-items: center;
+        margin-right: 30%;
+    }
+
+    .nav-links{
+        display: grid;
+        align-items: center;
+    }
+
+    .nav-links a{
+        margin: auto;
+    }
+
+    .About{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .About .area img{
+        width: 25rem;
+        height: 25rem;
+        margin-right: 15rem;
+    }
+
+    .Specifications .box-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Specifications .box-container .box{
+        text-align: center;
+        padding-right: 15rem;
+    }
+    .Specifications .box-container .box h1{
+        display: grid;
+    }
+
+    .Work .list-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Work .list-container .list{
+        text-align: left;
+    }
+
+    .Work .align-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Work .align-container .align{
+        text-align: left;
+    }
+
+   .Contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    }
+
+
+  .Footer .sub-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-right: 20%;
+   }
+
+    
+
+}
